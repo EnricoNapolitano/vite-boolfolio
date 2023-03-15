@@ -27,14 +27,8 @@ export default {
 </script>
 
 <template>
-  <AppHeader></AppHeader>
-
-  <div class="test">
-    <ul v-if="projects.length">
-      <li v-for="project in projects" :key="project.id">{{ project.title }}</li>
-    </ul>
-    <h3 v-else class="text-center my-5">Non ci sono progetti.</h3>
-  </div>
+  <app-header></app-header>
+  <app-main :projects="projects"></app-main>
 </template>
 
 <style></style>
