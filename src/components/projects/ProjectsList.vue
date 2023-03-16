@@ -1,5 +1,5 @@
 <script>
-import ProjectCard from './ProjctCard.vue';
+import ProjectCard from './ProjectCard.vue';
 export default {
     name: 'ProjectsList',
     props: { projects: Array },
