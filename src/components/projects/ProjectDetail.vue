@@ -33,7 +33,8 @@ export default {
 </script>
 <template>
     <app-loader v-if="isLoading"></app-loader>
-    <error-alert :hasError="hasError" @close="hasError = false"></error-alert>
-
-    <project-card :project="project" :isDetail="true"></project-card>
+    <div v-else>
+        <error-alert :hasError="hasError" @close="hasError = false"></error-alert>
+        <project-card :project="project" :isDetail="true"></project-card>
+    </div>
 </template>
