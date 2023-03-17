@@ -8,7 +8,5 @@ export default {
 </script>
 
 <template>
-    <div v-for="project in projects" :key="project.id" class="container">
-        <project-card :project="project"></project-card>
-    </div>
+    <project-card v-for="project in projects" :key="project.id" :project="project"></project-card>
 </template>
