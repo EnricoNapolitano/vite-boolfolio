@@ -2,10 +2,10 @@
 import axios from 'axios';
 const apiBaseUrl = 'http://localhost:8000/api/';
 import ProjectsList from '../components/projects/ProjectsList.vue';
-import ErrorAlert from '../components/partials/ErrorAlert.vue';
+// import ErrorAlert from '../components/partials/ErrorAlert.vue';
 export default {
     name: "HomePage",
-    components: { ProjectsList, ErrorAlert },
+    components: { ProjectsList },
     data() {
         return {
             projects: [],

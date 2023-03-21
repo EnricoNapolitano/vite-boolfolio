@@ -1,11 +1,11 @@
 <script>
 import axios from 'axios';
 import ProjectCard from './ProjectCard.vue';
-import ErrorAlert from '../partials/ErrorAlert.vue';
+// import ErrorAlert from '../partials/ErrorAlert.vue';
 const apiBaseUrl = 'http://localhost:8000/api/';
 export default {
     name: 'ProjectDetail',
-    components: { ProjectCard, ErrorAlert },
+    components: { ProjectCard },
     data() {
         return {
             project: null,
